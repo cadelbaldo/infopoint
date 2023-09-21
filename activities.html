@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Add your CSS file for styling -->
+</head>
+<body>
+
+<!-- Google Translate -->
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- Logo at the beginning of the page -->
+<div class="logo-container">
+    <a href="https://www.cadelbaldo.com"> <img src="assets/images/logo.png" alt="cadelbaldo-logo"> </a>
+    <a href="https://www.dimoredelbaldogarda.com"> <img src="assets/images/logo_dbg.jpg" alt="dbg-logo"> </a>
+</div>
+
+<div class="centered-container">
+    <select id="sectionSelector" onchange="navigateToSection()">
+        <option value="0">Beaches</option>
+        <option value="1">Recommended excursions</option>
+        <option value="2">Thematic parks</option>
+        <option value="3">Activities on the Garda Lake</option>
+        <option value="4">Spa</option>
+        <option value="5">Museums</option>
+        <option value="6">Territory</option>
+        <option value="7">Arena Opera Festival</option>
+    </select>
+</div>
+<script>
+    function navigateToSection() {
+        var selector = document.getElementById('sectionSelector');
+        var selectedValue = selector.value;
+        var h2Elements = document.getElementsByTagName('h2');
+        h2Elements[selectedValue].scrollIntoView({behavior: "smooth"});
+    }
+</script>
+
+<!-- Activities Section -->
+<section id="activities">
+
+    <h2>Beaches</h2>
+    <div class="info-container">
+        <img src="assets/images/activities/spiaggia.jpg" alt="Lake Garda Beaches" class="info-image">
+        <div class="info-content">
+            <div class="link-block">
+                <strong>Bardolino</strong>, free
+                <a href="https://goo.gl/maps/d9FVbkaUFb684V8n7">Position</a>
+            </div>
+            <div class="link-block">
+                <strong>Garda</strong>, free
+                <a href="https://goo.gl/maps/rN3stcZ9cT7WKwT88">Position</a>
+            </div>
+            <div class="link-block">
+                <strong>Garda</strong>, entrance fee
+                <a href="https://goo.gl/maps/Mtz7WfC7U3MXdj8V9">Position</a>
+            </div>
+            <div class="link-block">
+                <strong>Torri del Benaco</strong>, free
+                <a href="https://goo.gl/maps/CEU7f75rUBVdQF1b9">Position</a>
+            </div>
+            <div class="link-block">
+                <strong>Malcesine</strong>, free
+                <a href="https://goo.gl/maps/uy7afRS1FMmvmUmz8">Position</a>
+            </div>
+            <div class="link-block">
+                <strong>Malcesine</strong>, free but small
+                <a href="https://goo.gl/maps/fdfer1z8QQsqtDWx7">Position</a>
+            </div>
+            <div class="link-block">
+                <strong>Riva del Garda</strong>, free
+                <a href="https://goo.gl/maps/ZDJZc1qDGduh4y1FA">Position</a>
+            </div>
+            <div class="link-block">
+                <strong>Limone sul Garda</strong>, free
+                <a href="https://goo.gl/maps/iFvU7iiZRKnLFdTg9">Position</a>
+            </div>
+            <div class="link-block">
+                <strong>Sirmione</strong>, free but small
+                <a href="https://goo.gl/maps/s3BawiD9RHMotMVg8">Position</a>
+            </div>
+            <div class="link-block">
+                <strong>Cisano</strong>, free
+                <a href="https://goo.gl/maps/EH26asPDWukLkPDx7">Position</a>
+            </div>
+        </div>
+    </div>
+  
+    <br>
+    <h2>Recommended excursions</h2>
+        <div class="info-container">
+            <img src="assets/images/activities/funivia.png" alt="Lake Garda Attractions" class="info-image">
+            <div class="info-content">
+                <div class="link-block">
+                    <strong>Baldo Cableways</strong>
+                    <a href="https://www.funiviedelbaldo.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Navigation on Garda Lake</strong>
+                    <a href="https://www.navigazionelaghi.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>360 Garda Life</strong>
+                    <a href="https://www.360gardalife.com">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Garda Island</strong>
+                    <a href="https://www.isoladelgarda.com/lakegarda/The-Island.html">Web site</a>
+                </div>
+                <!-- ... similar structure for other links ... -->
+                <div class="link-block">
+                    <strong>Venezia</strong>
+                    <a href="http://www.turismovenezia.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Mantova</strong>
+                    <a href="http://www.turismo.mantova.it/">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Strada del Vino Valpolicella</strong>
+                    <a href="https://www.stradadelvinovalpolicella.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>San Giorgio di Valpolicella</strong>
+                    <a href="http://www.sangiorgiodivalpolicella.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Parco delle cascate</strong>
+                    <a href="https://www.parcodellecascate.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Hut Ime</strong>
+                    <a href="http://www.agriturismomalgaime.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Hut Pralongo</strong>
+                    <a href="https://www.facebook.com/malgapralongo">Web site</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+    <h2>Thematic parks</h2>
+        <div class="info-container">
+            <img src="assets/images/activities/parchi.png" alt="Lake Garda Parks" class="info-image">
+            <div class="info-content">
+                <div class="link-block">
+                    <strong>Gardaland</strong>
+                    <a href="https://www.gardaland.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>CanevaWorld</strong>
+                    <a href="https://www.canevaworld.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Parco Sigurtà</strong>
+                    <a href="https://www.sigurta.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Parco Natura Viva</strong>
+                    <a href="https://www.parconaturaviva.it">Web site</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+    <h2>Activities on the Garda Lake</h2>    
+        <div class="info-container">
+            <img src="assets/images/activities/ciclo.png" alt="Lake Garda Activities" class="info-image">
+            <div class="info-content">
+                <div class="link-block">
+                    <strong>Boat rental in Brenzone</strong>
+                    <a href="https://www.boatrent-tredicuori.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Cycling</strong>
+                    <a href="https://www.piste-ciclabili.com/provincia-verona">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Windsurf</strong>
+                    <a href="https://www.surfsegnana.it">Web site 1</a>
+                    <a href="http://www.vascorenna.com">Web site 2</a>
+                </div>
+                <div class="link-block">
+                    <strong>Equipe Natura</strong>
+                    <a href="http://www.equipenatura.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Xmountain</strong>
+                    <a href="https://www.xmountain.it">Web site</a>
+                </div>
+                <div class="link-block">
+                    <strong>Paragliding</strong>
+                    <a href="https://www.tandem-garda.com">Web site</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <br>
+        <h2>Spa</h2>
+            <div class="info-container">
+                <img src="assets/images/activities/terme.png" alt="Lake Garda Thermal Spas" class="info-image">
+                <div class="info-content">
+                    <div class="link-block">
+                        <strong>Aquardens</strong>
+                        <a href="https://www.aquardens.it">Web site</a>
+                    </div>
+                    <div class="link-block">
+                        <strong>Gardacqua</strong>
+                        <a href="http://www.gardacqua.eu">Web site</a>
+                    </div>
+                    <div class="link-block">
+                        <strong>Thermal spas on Lake Garda</strong>
+                        <a href="https://www.benesserelagodigarda.com/it/centri-termali-benessere-lago-di-garda#terme">Web site</a>
+                    </div>
+                    <div class="link-block">
+                        <strong>Villa dei Cedri</strong>
+                        <a href="https://www.villadeicedri.it">Web site</a>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+        <h2>Museums</h2>
+            <div class="info-container">
+                <img src="assets/images/activities/museo.png" alt="Lake Garda Museums" class="info-image">
+                <div class="info-content">
+                    <div class="link-block">
+                        <strong>Museo del Vino</strong>
+                        <a href="https://www.museodelvino.it">Web site</a>
+                    </div>
+                    <div class="link-block">
+                        <strong>Museo dell'Olio</strong>
+                        <a href="https://www.museum.it">Web site</a>
+                    </div>
+                    <div class="link-block">
+                        <strong>Visitare Malcesine</strong>
+                        <a href="https://www.visitmalcesine.com/it/museo-storia-naturale-monte-baldo-garda-castello-scaligero-malcesine/60">Web site</a>
+                    </div>
+                    <div class="link-block">
+                        <strong>Museo Fossili di Bolca</strong>
+                        <a href="https://www.museofossilibolca.eu">Web site</a>
+                    </div>
+                    <div class="link-block">
+                        <strong>Museo di Castelvecchio</strong>
+                        <a href="https://museodicastelvecchio.comune.verona.it/nqcontent.cfm?a_id=42545">Web site</a>
+                    </div>
+                    <div class="link-block">
+                        <strong>Museo Teatro Romano di Verona</strong>
+                        <a href="https://museoarcheologico.comune.verona.it/nqcontent.cfm?a_id=42704">Web site</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+        
+            <h2>Territory</h2>
+                <div class="info-container">
+                    <img src="assets/images/activities/lakegarda.jpg" alt="Lake Garda" class="info-image">
+                    <div class="info-content">
+                        <div class="link-block">
+                            <strong>Caprino Veronese</strong>
+                            <a href="http://caprinoveronese.it/">Web site</a>
+                        </div>
+                        <div class="link-block">
+                            <strong>VisitGarda</strong>
+                            <a href="https://www.visitgarda.com">Web site</a>
+                        </div>
+                        <div class="link-block">
+                            <strong>Veneto</strong>
+                            <a href="https://www.magicoveneto.it">Web site</a>
+                        </div>
+                        <div class="link-block">
+                            <strong>Verona</strong>
+                            <a href="http://www.turismoverona.eu">Web site</a>
+                        </div>
+                    </div>
+                </div>
+            <br>
+        
+        <h2>Arena Opera Festival</h2>
+            <div class="info-container">
+                <img src="assets/images/activities/arena.jpg" alt="Arena of Verona" class="info-image">
+                <div class="info-content">
+                    <div class="link-block">
+                        <strong>Arena</strong>
+                        <a href="https://www.arena.it">Web site</a>
+                    </div>
+                </div>
+            </div>
+</section>
+
+<footer>
+    <p style="text-align: center; font-family: 'Georgia', serif;">Made with ❤️ by laitifranz</p>
+</footer>
+
+</body>
+</html>

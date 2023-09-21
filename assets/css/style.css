@@ -1,0 +1,195 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fff6e5; /* Warm off-white background */
+    color: #664c33; /* Warm text color */
+    line-height: 1.6;
+}
+
+.logo-container {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0;
+}
+
+.logo-container img {
+    max-width: 200px;
+    width: 100%;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #8a5a38; /* Warm header color */
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 30px;
+    background-color: #fdeac1; /* Warm list background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul li strong {
+    font-size: 1.2em;
+}
+
+ul li a {
+    color: #d47a56; /* Warm link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #b65d43; /* Warm link hover color */
+}
+
+
+
+/* Fluid typography for better scaling on different devices */
+html {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Ensure fluid layout */
+section {
+    width: 95%; /* Increased width on smaller devices */
+}
+
+.logo-container img {
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures that the image is clipped to the circle */
+    border: 3px solid #f2a365; /* Adds a border to the circular logo */
+}
+
+/* Flexbox Styling */
+.info-container {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    margin-bottom: 20px; /* Spacing between each info block */
+    background-color: #fdeac1; /* Warm background color */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-container a {
+    color: #d47a56; /* Warm link color for dark mode */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info-container a:hover {
+    color: #b65d43; /* Warm link hover color for dark mode */
+}
+
+.info-image {
+    max-width: 150px; /* Adjust based on your preference */
+    margin-right: 20px; /* Spacing between image and content */
+}
+
+.link-block {
+    margin-bottom: 10px; /* Spacing between each link block */
+}
+
+
+@media (max-width: 600px) {
+    .logo-container img {
+        width: 45%;
+        height: auto;
+        display: inline-block;
+    }
+    .section-navigation a {
+        font-size: 1.2em;  /* Increase the font size */
+    }
+}
+
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1f1f1f; /* Dark background */
+        color: #e5e5e5; /* Light text color */
+    }
+
+    h2 {
+        color: #f2a365; /* Warm header color for dark mode */
+    }
+
+    ul li {
+        background-color: #2c2c2c; /* Dark list background color */
+    }
+
+    ul li a {
+        color: #f2a365; /* Warm link color for dark mode */
+    }
+
+    ul li a:hover {
+        color: #d47a56; /* Warm link hover color for dark mode */
+    }
+
+    .info-container {
+        background-color: #2c2c2c; /* Dark background for the info container */
+        color: #e5e5e5; /* Light text color */
+    }
+
+    .info-container a {
+        color: #f2a365; /* Warm link color for dark mode */
+    }
+
+    .info-container a:hover {
+        color: #d47a56; /* Warm link hover color for dark mode */
+    }
+}
+
+
+.section-navigation {
+    display: flex;           /* Enables flexbox */
+    justify-content: center; /* Horizontally centers content */
+    align-items: center;     /* Vertically centers content */
+}
+
+.section-navigation ul {
+    list-style: none;       /* Removes default list styling */
+    padding: 0;             /* Removes default padding */
+    margin: 0;              /* Removes default margin */
+}
+
+.section-navigation li {
+    display: inline-block;  /* Displays list items inline */
+    margin: 0 15px;         /* Adds spacing between list items */
+}
+
+.section-navigation a {
+    text-decoration: none;  /* Removes underline from links */
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
